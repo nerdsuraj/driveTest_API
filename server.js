@@ -56,6 +56,11 @@ app.post('/api/get-keys', async (req, res) => {
     }
 });
 
+
+app.get('/api', async (req, res) => {
+    res.status(200).json({ message: 'API is working' });
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
